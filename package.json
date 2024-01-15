@@ -1,6 +1,6 @@
 {
   "name": "render-root",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Use data objects to hydrate your client to save time and keep your code clean",
   "main": "index.ts",
   "repository": {
