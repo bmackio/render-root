@@ -1,10 +1,16 @@
 {
   "name": "render-root",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Use data objects to hydrate your client to save time and keep your code clean",
   "main": "index.ts",
-  "repository": "https://github.com/bmackio/render-root",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmackio/render-root.git"
+  },
   "author": "Brian McDonough",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
