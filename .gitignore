@@ -18,6 +18,3 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
-
-# npmrc
-.npmrc
