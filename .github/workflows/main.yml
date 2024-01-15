@@ -7,15 +7,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # UBUNTU-LATEST COMPLETE
     steps:
       - uses: actions/checkout@v3
+      # CHECKOUT COMPLETE
       - uses: pnpm/action-setup@v2
         with:
           version: 7
+      # PNPM SETUP COMPLETE
       - uses: actions/setup-node@v3
         with:
           node-version: 16.x
           cache: "pnpm"
 
+      # NODE SETUP COMPLETE
       - run: pnpm install --frozen-lockfile
+      # INSTALL COMPLETE
       - run: pnpm run lint && pnpm run build
