@@ -11,6 +11,6 @@
   "license": "MIT",
   "private": false,
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@bmackio:registry": "https://npm.pkg.github.com"
   }
 }
