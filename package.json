@@ -1,6 +1,9 @@
 {
   "name": "render-root",
-  "version": "0.1.7",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "description": "Use data objects to hydrate your client to save time and keep your code clean",
   "repository": {
     "type": "git",
@@ -11,5 +14,14 @@
   "private": false,
   "publishConfig": {
     "@bmackio:registry": "https://npm.pkg.github.com"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "@changesets/cli": "^2.27.1"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --out-dir dist",
+    "lint": "tsc"
   }
 }
