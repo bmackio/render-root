@@ -1,4 +1,4 @@
 export default function() {
     console.log('Hello World');
-    console.log('0.1.6');
+    console.log('0.1.7');
 }

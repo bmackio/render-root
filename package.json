@@ -1,6 +1,6 @@
 {
   "name": "render-root",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Use data objects to hydrate your client to save time and keep your code clean",
   "repository": {
     "type": "git",
