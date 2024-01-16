@@ -41,6 +41,10 @@ jobs:
           cache: "pnpm"
 
       # NODE SETUP COMPLETE
-      - run: pnpm install --frozen-lockfile
+      - run: |
+          pnpx changeset version 
+          && pnpm install --no-frozen-lockfile 
+          && git add . 
+          && git commit -m "chore: bump version"
       # INSTALL COMPLETE
       - run: pnpm run lint && pnpm run build
