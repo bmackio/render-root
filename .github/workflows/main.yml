@@ -42,8 +42,8 @@ jobs:
 
       # NODE SETUP COMPLETE
       - run: |
-          pnpm changeset version 
-          && pnpm install --no-frozen-lockfile 
+          pnpm changeset version
+          pnpm install --no-frozen-lockfile 
           && git add . 
           && git commit -m "chore: bump version"
       # INSTALL COMPLETE
