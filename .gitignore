@@ -20,4 +20,4 @@ yarn-error.*
 *.tsbuildinfo
 
 # typescript
-dist
+# dist
