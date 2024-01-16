@@ -1,5 +1,11 @@
 # @bmackio/render-root
 
+## 0.0.3
+
+### Patch Changes
+
+- 483528a: Add release script
+
 ## 0.0.2
 
 ### Patch Changes
