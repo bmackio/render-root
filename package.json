@@ -1,7 +1,7 @@
 {
   "name": "@bmackio/render-root",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,12 +16,16 @@
     "@bmackio:registry": "https://npm.pkg.github.com"
   },
   "devDependencies": {
+    "@types/react": "^18.2.48",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --out-dir dist",
-    "release": "yarn build && yarn publish --access public",
+    "_build": "tsup src/index.ts --format cjs,esm --dts --out-dir dist",
+    "release": "yarn _build && yarn publish --access public",
     "lint": "tsc"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
   }
 }

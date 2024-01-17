@@ -1,4 +1,1 @@
-export default function() {
-    console.log('Hello World');
-    console.log('0.1.7');
-}
+export { renderRoot } from "./render";

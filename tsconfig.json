@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     /* Base Options: */
+    "declaration": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "target": "es2022",
-    "verbatimModuleSyntax": true,
+    "target": "esnext",
     "allowJs": true,
     "resolveJsonModule": true,
     "moduleDetection": "force",
@@ -12,10 +12,27 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     /* If NOT transpiling with TypeScript: */
-    "moduleResolution": "Bundler",
+    "moduleResolution": "Node",
     "module": "ESNext",
     "noEmit": true,
     /* If your code runs in the DOM: */
-    "lib": ["es2022", "dom", "dom.iterable"],
-  }
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ],
+    "typeRoots": [
+      "./typings",
+      "./node_modules/@types/"
+    ]
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "dist/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
