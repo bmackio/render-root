@@ -104,7 +104,7 @@ function renderRoot({
     });
   });
   const Hydrated = generateReactElement({
-    name: "container",
+    name: "view",
     compKv,
     props: { id: rootKey },
     key: rootKey,
