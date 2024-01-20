@@ -67,8 +67,6 @@ function mapChildren({
 }): React.ReactNode {
     let mappedChildren;
 
-    // console.log(JSON.stringify(compData))
-
     // map children for every child
     const { properties: { descendents = null } } = compData;
     if (descendents) {
@@ -107,7 +105,6 @@ export function renderRoot({
     // to Parent components
     // before rendering inside a root component
 
-    // console.log(JSON.stringify(data[0]))
     const mappedChildren = data.map((comp: CompData, i: number) => {
         return mapChildren({
             key: i + 450,
@@ -118,7 +115,7 @@ export function renderRoot({
 
     //  return Root Component;
     const Hydrated = generateReactElement({
-        name: "container",
+        name: "view",
         compKv,
         props: { id: rootKey },
         key: rootKey,

@@ -1,11 +1,11 @@
 {
   "name": "@bmackio/render-root",
   "license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "description": "Use data objects to hydrate your client to save time and keep your code clean",
+  "description": "Use data objects in react to hydrate your client to save time and keep your code clean",
   "repository": {
     "type": "git",
     "url": "https://github.com/bmackio/render-root.git"
